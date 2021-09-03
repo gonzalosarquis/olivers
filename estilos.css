@@ -198,13 +198,13 @@ section{
     border-radius: 15px;
 }
 
-.cajaSalsas{
+.contenedorSalsas{
     max-width: 80%;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
 }
-.cajaSalsas p{
+.contenedorSalsas p{
     width: 75%;
     font-size: 18px;
     padding: 20px;
@@ -213,7 +213,7 @@ section{
     display: inline-flex;
 }
 
-.cajaSalsas img{
+.contenedorSalsas img{
     width: 80%;
     border-bottom-left-radius: 50px;
 }
@@ -297,6 +297,86 @@ footer{
   margin-bottom: 5px;
 }
 
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(17, 38, 48, 0.9);
+  transition: 0.3s;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #C72F36;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar a i, .navbar a:focus i {
+    font-size: 25px;
+    line-height: 15px;
+}
+
+.navbar-mobile a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #e6b120;
+}
+
+.navbar-mobile .getstarted {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #68A4C4;
+}
+
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
 
 /**
 * Mobile Navigation 
@@ -320,6 +400,9 @@ footer{
 @media (max-width: 1499px){
   .cajaMenu{
     width: 27%;
+  }
+  .cajaSalsas{
+    width: 50%;
   }
 }
 
@@ -417,10 +500,10 @@ footer{
   .h1Delivery{
     font-size: 25px;
   }
-  .cajaSalsas{
+  .contenedorSalsas{
     margin-bottom: 40px;
   }
-  .cajaSalsas p{
+  .contenedorSalsas p{
     font-size: 15px;
   }
   .contenedorDelivery{
@@ -434,85 +517,3 @@ footer{
   }
 }
 
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(17, 38, 48, 0.9);
-  transition: 0.3s;
-}
-
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  background-color: #C72F36;
-  overflow-y: auto;
-  transition: 0.3s;
-}
-
-.navbar a i, .navbar a:focus i {
-    font-size: 25px;
-    line-height: 15px;
-}
-
-.navbar-mobile a {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #fff;
-}
-
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #e6b120;
-}
-
-.navbar-mobile .getstarted {
-  margin: 15px;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #68A4C4;
-}
-
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
-}
-
-/*--------------------------------------------------------------
