@@ -444,6 +444,9 @@ footer{
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  .cajaSalsas{
+    width: 100%;
+  }
 
   .cajaMenu{
     width: 60%;
