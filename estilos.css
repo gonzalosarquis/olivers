@@ -383,6 +383,9 @@ footer{
     font-size: 35px;
     padding: 20px;
   }
+  .contenedorMenu{
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 450px){
@@ -408,11 +411,26 @@ footer{
     padding: 0px 80px 80px 80px;
   }
   .verMenu a{
-    font-size: 13px;
-    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+    padding: 12px 27px 12px 27px;
   }
   .h1Delivery{
     font-size: 25px;
+  }
+  .cajaSalsas{
+    margin-bottom: 40px;
+  }
+  .cajaSalsas p{
+    font-size: 15px;
+  }
+  .contenedorDelivery{
+    margin-top: 20px;
+  }
+  .logoFooter img{
+    width: 60%;
+  }
+  .cajaDatos{
+    margin-bottom: 80px;
   }
 }
 
